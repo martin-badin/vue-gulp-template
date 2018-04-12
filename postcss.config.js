@@ -6,8 +6,8 @@ const config = {
       environment: process.env.NODE_ENV || 'development',
       replacements: {
         BASE_URL: {
-          production: '//my.site/themes/theme_name/assets',
-          development: '//localhost:3000/themes/theme_name/assets',
+          production: 'http://example.com',
+          development: 'http://localhost',
         },
       },
     }),
