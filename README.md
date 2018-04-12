@@ -6,7 +6,7 @@
 
 ## Setup
 
-### Update setting in gulp.config.yml
+### Update setting in [gulp.config.yml](https://github.com/martin-badin/vue-gulp-template/blob/master/gulp.config.yml)
 
 * add path for output and update name if it required
 * update the proxy and add or remove path for watching files
