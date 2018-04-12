@@ -1,8 +1,8 @@
 ## Introduction
 
-* the template using for watching files the Browsersync
-* the template is setted for vuejs but it can be used for some other js frameworks
-* the template is setted for sass
+* the template using for watching files the [Browsersync](https://browsersync.io/)
+* the template is setted for [vuejs](https://vuejs.org) but it can be used for some other js frameworks
+* the template is setted for [sass](https://sass-lang.com/)
 
 ## Setup
 
