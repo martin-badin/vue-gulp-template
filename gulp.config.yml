@@ -1,0 +1,18 @@
+javascript:
+  sources:
+    - ./src/js/app.js
+  output:
+    path: ./themes/theme_name/assets/js
+    name: main.min.js
+style:
+  sources:
+    - ./src/styles/style.scss
+  output:
+    path: ./themes/theme_name/assets/css
+    name: style.min.css
+browser_sync:
+  proxy: theme_name.l
+  browser: google chrome
+  baseDir: ./
+  files:
+    - ./themes/theme_name/**/*
