@@ -40,8 +40,6 @@
     "gulp-sourcemaps": "^2.6.4",
     "js-yaml": "^3.11.0",
     "path": "^0.12.7",
-    "postcss-bootstrap-grid":
-      "git+ssh://git@bitbucket.org:martin63/postcss-bootstrap-grid.git",
     "postcss-color-hex-alpha": "^3.0.0",
     "postcss-env-replace": "^0.0.2",
     "postcss-image-set-polyfill": "^0.4.4",
