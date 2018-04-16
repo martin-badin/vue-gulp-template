@@ -1,5 +1,11 @@
 # vue-gulp-template
 
+## Instalation
+
+```js
+vue init martin-badin/vue-gulp-template project-name
+```
+
 ## Introduction
 
 * the template using for watching files the [Browsersync](https://browsersync.io/)
