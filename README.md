@@ -1,4 +1,4 @@
-# @martin.badin/vue-gulp-template
+# vue-gulp-template
 
 ## Introduction
 
