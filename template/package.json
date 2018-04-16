@@ -43,6 +43,7 @@
     "postcss-color-hex-alpha": "^3.0.0",
     "postcss-env-replace": "martin-badin/postcss-env-replace",
     "postcss-image-set-polyfill": "^0.4.4",
+    "postcss-import": "^11.1.0",
     "uglifyify": "^4.0.5",
     "vinyl-source-stream": "^2.0.0",
     "vue-eslint-parser": "^2.0.3",

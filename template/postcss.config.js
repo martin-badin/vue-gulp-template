@@ -2,6 +2,7 @@
 
 const config = {
   plugins: [
+    require("postcss-import"),
     require('postcss-env-replace')({
       environment: process.env.NODE_ENV || 'development',
       replacements: {
