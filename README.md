@@ -57,3 +57,17 @@ output
   background-image: url(http://localhost/myAwesomeImage.jpg);
 }
 ```
+
+BASE_URL is contains in postcss.config.js file
+
+```js
+require('postcss-env-replace')({
+  environment: process.env.NODE_ENV || 'development',
+  replacements: {
+    BASE_URL: {
+      production: 'http://example.com',
+      development: 'http://localhost',
+    },
+  },
+}),
+```

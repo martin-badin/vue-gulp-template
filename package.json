@@ -1,8 +1,7 @@
 {
   "name": "vue-gulp-template",
-  "author": "Martin Badin",
-  "email": "martin.badin@gmail.com",
-  "version": "0.0.6",
+  "author": "Martin Badin <martin.badin@gmail.com>",
+  "version": "0.0.7",
   "license": "MIT",
   "repository": {
     "type": "git",
