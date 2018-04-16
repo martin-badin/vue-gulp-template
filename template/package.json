@@ -1,18 +1,15 @@
 {
-  "name": "vue-gulp-template",
-  "author": "Martin Badin",
-  "email": "martin.badin@gmail.com",
-  "version": "0.0.3",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/martin-badin/vue-gulp-template"
-  },
+  "name": "{í name }}",
+  "author": "{{ author }}",
+  "description": "{{ description }}",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
     "start": "cross-env NODE_ENV=development gulp watch",
     "build": "cross-env NODE_ENV=production gulp build",
     "flow:watch": "flow-watch",
-    "format": "prettier --single-quote --trailing-comma es5 --write '{src,__{tests,mocks}__}/**/*'",
+    "format":
+      "prettier --single-quote --trailing-comma es5 --write '{src,__{tests,mocks}__}/**/*'",
     "lint": "eslint 'src/**/*.{js,vue}'",
     "lint-fix": "yarn lint --fix"
   },
@@ -43,7 +40,8 @@
     "gulp-sourcemaps": "^2.6.4",
     "js-yaml": "^3.11.0",
     "path": "^0.12.7",
-    "postcss-bootstrap-grid": "git+ssh://git@bitbucket.org:martin63/postcss-bootstrap-grid.git",
+    "postcss-bootstrap-grid":
+      "git+ssh://git@bitbucket.org:martin63/postcss-bootstrap-grid.git",
     "postcss-color-hex-alpha": "^3.0.0",
     "postcss-env-replace": "^0.0.2",
     "postcss-image-set-polyfill": "^0.4.4",
@@ -55,10 +53,7 @@
   "dependencies": {
     "vue": "^2.5.16"
   },
-  "browserslist": [
-    "last 3 versions",
-    "not ie <= 8"
-  ],
+  "browserslist": ["last 3 versions", "not ie <= 8"],
   "browser": {
     "vue": "vue/dist/vue.common.js"
   }
