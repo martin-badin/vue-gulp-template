@@ -1,0 +1,12 @@
+// loader animation
+body {
+  line-height: 1.5;
+  font-size: 14px;
+  min-width: 320px;
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+
+  &.loading {
+    opacity: 0;
+  }
+}
