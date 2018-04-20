@@ -16,7 +16,7 @@ vue init martin-badin/vue-gulp-template project-name
 
 ### Update setting in [gulp.config.yml](https://github.com/martin-badin/vue-gulp-template/blob/master/gulp.config.yml)
 
-* add path for output and update name if it required
+* add path for output and update name if required
 * update the proxy and add or remove path for watching files
 
 ```yaml
@@ -40,7 +40,7 @@ browser_sync:
     - ./themes/theme_name/**/*
 ```
 
-## Usage [postcss-env-replace](https://github.com/stehefan/postcss-env-replace)
+## Using [postcss-env-replace](https://github.com/stehefan/postcss-env-replace)
 
 input
 
