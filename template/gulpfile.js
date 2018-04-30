@@ -14,7 +14,7 @@ const YAML = require('js-yaml');
 const fs = require('fs');
 const postcss = require('gulp-postcss');
 
-const GULP_CONFIG = YAML.load(fs.readFileSync('./gulp.config.yml', 'utf8'));
+const GULP_CONFIG = YAML.load(fs.readFileSync('./gulp.config.yaml', 'utf8'));
 const SRC_PATH = path.join(__dirname, '/src');
 
 gulp.task('style', () =>
