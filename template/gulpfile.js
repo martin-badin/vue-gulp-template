@@ -37,7 +37,34 @@ gulp.task('js', () =>
     .pipe(gulp.dest(GULP_CONFIG.javascript.output.path))
 );
 
-gulp.task('build', ['js', 'style']);
+gulp.task('version', () => {
+  const config = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
+  const parsed = config.version.split('.').map(number => parseInt(number));
+
+  function increment(number) {
+    if (number < 9) {
+      return ++number;
+    }
+
+    return 0;
+  }
+
+  parsed[2] = increment(parsed[2]);
+
+  if (parsed[2] === 0) {
+    parsed[1] = increment(parsed[1]);
+
+    if (parsed[1] === 0) {
+      parsed[0] = increment(parsed[0]);
+    }
+  }
+
+  config.version = parsed.join('.');
+
+  fs.writeFileSync('./package.json', JSON.stringify(config, null, '\t'));
+});
+
+gulp.task('build', ['js', 'style', 'version']);
 
 gulp.task('watch', () => {
   browserSync.init(GULP_CONFIG.browser_sync);
