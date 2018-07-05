@@ -1,14 +1,17 @@
 // @flow
 
 module.exports = {
-  parser: "vue-eslint-parser",
+  parser: 'vue-eslint-parser',
   parserOptions: {
-    parser: "babel-eslint",
-    sourceType: "module"
+    parser: 'babel-eslint',
+    sourceType: 'module',
   },
-  plugins: ["flowtype", "vue"],
-  extends: ["eslint:recommended", "plugin:vue/recommended"],
+  plugins: ['flowtype', 'vue', 'html', 'flowtype-errors'],
+  extends: ['eslint:recommended', 'plugin:vue/recommended'],
+  rules: {
+    'flowtype-errors/show-errors': 2,
+  },
   env: {
-    node: true
-  }
+    node: true,
+  },
 };

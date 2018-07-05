@@ -1,4 +1,9 @@
 {
   "presets": ["vue-app", "es2015", "flow"],
-  "plugins": ["syntax-async-functions"]
+  "plugins": [
+    "syntax-async-functions",
+    "syntax-flow",
+    "transform-class-properties",
+    "transform-flow-strip-types"
+  ]
 }

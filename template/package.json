@@ -1,60 +1,65 @@
 {
-  "name": "{{ name }}",
+	"name": "{{ name }}",
   "author": "{{ author }}",
   "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "start": "cross-env NODE_ENV=development gulp watch",
-    "build": "cross-env NODE_ENV=production gulp build",
-    "flow:watch": "flow-watch",
-    "format": "prettier --single-quote --trailing-comma es5 --write '{src,__{tests,mocks}__}/**/*'",
-    "lint": "eslint 'src/**/*.{js,vue}'",
-    "lint-fix": "yarn lint --fix"
-  },
-  "devDependencies": {
-    "autoprefixer": "^8.6.2",
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^8.2.3",
-    "babel-plugin-syntax-async-functions": "^6.13.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-flow": "^6.23.0",
-    "babel-preset-vue-app": "^2.0.0",
-    "babelify": "^8.0.0",
-    "browser-sync": "^2.24.4",
-    "browserify": "^16.2.2",
-    "cross-env": "^5.2.0",
-    "cssnano": "^3.10.0",
-    "envify": "^4.1.0",
-    "eslint": "^4.19.1",
-    "eslint-plugin-flowtype": "^2.49.3",
-    "eslint-plugin-flowtype-errors": "^3.6.0",
-    "eslint-plugin-vue": "^4.5.0",
-    "flow-bin": "^0.74.0",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-noop": "^1.0.0",
-    "gulp-postcss": "^7.0.1",
-    "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4",
-    "js-yaml": "^3.12.0",
-    "path": "^0.12.7",
-    "postcss-color-hex-alpha": "^3.0.0",
-    "postcss-env-replace": "martin-badin/postcss-env-replace",
-    "postcss-image-set-polyfill": "^0.4.4",
-    "postcss-import": "^11.1.0",
-    "uglifyify": "^5.0.0",
-    "vinyl-source-stream": "^2.0.0",
-    "vue-eslint-parser": "^2.0.3",
-    "vueify": "^9.4.1"
-  },
-  "dependencies": {
-    "vue": "^2.5.16"
-  },
-  "browserslist": [
-    "last 3 versions",
-    "not ie <= 8"
-  ],
-  "browser": {
-    "vue": "vue/dist/vue.common.js"
-  }
+	"private": true,
+	"scripts": {
+		"start": "cross-env NODE_ENV=development gulp watch",
+		"build": "cross-env NODE_ENV=production gulp build",
+		"flow:watch": "flow-watch",
+		"format": "prettier --single-quote --trailing-comma es5 --write '{src,__{tests,mocks}__}/**/*'",
+		"lint": "eslint 'src/**/*.{js,vue}'",
+		"lint-fix": "yarn lint --fix"
+	},
+	"devDependencies": {
+		"autoprefixer": "^8.6.4",
+		"babel-core": "^6.26.3",
+		"babel-eslint": "^8.2.5",
+		"babel-plugin-syntax-async-functions": "^6.13.0",
+		"babel-plugin-syntax-flow": "^6.18.0",
+		"babel-plugin-transform-class-properties": "^6.24.1",
+		"babel-plugin-transform-flow-strip-types": "^6.22.0",
+		"babel-preset-es2015": "^6.24.1",
+		"babel-preset-flow": "^6.23.0",
+		"babel-preset-vue-app": "^2.0.0",
+		"babelify": "^8.0.0",
+		"browser-sync": "^2.24.5",
+		"browserify": "^16.2.2",
+		"cross-env": "^5.2.0",
+		"cssnano": "3.10.0",
+		"envify": "^4.1.0",
+		"eslint": "^5.0.1",
+		"eslint-config-vue": "^2.0.2",
+		"eslint-plugin-flowtype": "^2.49.3",
+		"eslint-plugin-flowtype-errors": "^3.6.0",
+		"eslint-plugin-html": "^4.0.5",
+		"eslint-plugin-vue": "^4.5.0",
+		"flow-bin": "^0.75.0",
+		"gulp": "^3.9.1",
+		"gulp-concat": "^2.6.1",
+		"gulp-noop": "^1.0.0",
+		"gulp-postcss": "^7.0.1",
+		"gulp-sass": "^4.0.1",
+		"gulp-sourcemaps": "^2.6.4",
+		"js-yaml": "^3.12.0",
+		"path": "^0.12.7",
+		"postcss-color-hex-alpha": "^3.0.0",
+		"postcss-env-replace": "martin-badin/postcss-env-replace",
+		"postcss-image-set-polyfill": "^0.4.4",
+		"postcss-import": "^11.1.0",
+		"uglifyify": "^5.0.1",
+		"vinyl-source-stream": "^2.0.0",
+		"vue-eslint-parser": "^3.0.0",
+		"vueify": "^9.4.1"
+	},
+	"dependencies": {
+		"vue": "^2.5.16"
+	},
+	"browserslist": [
+		"last 3 versions",
+		"not ie <= 8"
+	],
+	"browser": {
+		"vue": "vue/dist/vue.common.js"
+	}
 }

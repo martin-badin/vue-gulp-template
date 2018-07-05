@@ -11,6 +11,7 @@ vue init martin-badin/vue-gulp-template project-name
 * the template using for watching files the [Browsersync](https://browsersync.io/)
 * the template is set for [vuejs](https://vuejs.org) but it can be used for some other js frameworks
 * the template is set for [sass](https://sass-lang.com/)
+* add support for [flow](https://flow.org/en/)
 
 ## Setup
 
