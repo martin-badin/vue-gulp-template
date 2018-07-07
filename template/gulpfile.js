@@ -21,7 +21,11 @@ gulp.task('style', () =>
   gulp
     .src(GULP_CONFIG.style.sources)
     .pipe(process.env.NODE_ENV === 'development' ? sourcemaps.init() : noop())
-    .pipe(sass().on('error', sass.logError))
+    .pipe(
+      sass({
+        includePaths: ['node_modules', 'bower_components'],
+      }).on('error', sass.logError)
+    )
     .pipe(postcss())
     .pipe(concat(GULP_CONFIG.style.output.name))
     .pipe(
