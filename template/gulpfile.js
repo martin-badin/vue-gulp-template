@@ -1,5 +1,3 @@
-// @flow
-
 const gulp = require('gulp');
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();

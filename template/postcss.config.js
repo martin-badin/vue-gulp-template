@@ -1,5 +1,3 @@
-// @flow
-
 const config = {
   plugins: [
     require('postcss-import'),

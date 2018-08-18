@@ -1,5 +1,3 @@
-// @flow
-
 const config = {
   transform: ['vueify', 'babelify'],
   debug: false,
