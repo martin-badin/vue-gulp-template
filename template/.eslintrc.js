@@ -4,11 +4,8 @@ module.exports = {
     parser: 'babel-eslint',
     sourceType: 'module',
   },
-  plugins: ['flowtype', 'vue', 'html', 'flowtype-errors'],
+  plugins: ['flowtype', 'vue', 'flowtype-errors'],
   extends: ['eslint:recommended', 'plugin:vue/essential'],
-  rules: {
-    'flowtype-errors/show-errors': 2,
-  },
   env: {
     node: true,
   },
