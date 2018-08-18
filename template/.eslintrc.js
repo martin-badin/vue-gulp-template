@@ -7,7 +7,7 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['flowtype', 'vue', 'html', 'flowtype-errors'],
-  extends: ['eslint:recommended', 'plugin:vue/recommended'],
+  extends: ['eslint:recommended', 'plugin:vue/essential'],
   rules: {
     'flowtype-errors/show-errors': 2,
   },
