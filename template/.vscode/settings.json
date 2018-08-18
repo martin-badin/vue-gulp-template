@@ -1,14 +1,13 @@
 {
   "editor.formatOnSave": true,
+  "eslint.validate": ["javascript", "javascriptreact", "vue"],
+  "files.associations": { "*.htm": "twig" },
   "flow.enabled": true,
   "flow.runOnEdit": true,
   "flow.showStatus": true,
   "flow.stopFlowOnExit": true,
   "flow.useNPMPackagedFlow": true,
   "javascript.validate.enable": false,
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
   "vetur.validation.script": false,
-  "eslint.validate": ["javascript", "javascriptreact", "vue"],
-  "files.associations": {
-    "*.htm": "twig"
-  }
 }
