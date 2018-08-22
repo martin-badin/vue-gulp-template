@@ -3,7 +3,6 @@ const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
 const sourcemaps = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
-const path = require('path');
 const browserify = require('browserify');
 const noop = require('gulp-noop');
 const source = require('vinyl-source-stream');
@@ -13,7 +12,6 @@ const fs = require('fs');
 const postcss = require('gulp-postcss');
 
 const GULP_CONFIG = YAML.load(fs.readFileSync('./gulp.config.yaml', 'utf8'));
-const SRC_PATH = path.join(__dirname, '/src');
 
 function styles() {
   return gulp
@@ -44,6 +42,6 @@ gulp.task('build', gulp.parallel(scripts, styles));
 gulp.task('watch', () => {
   browserSync.init(GULP_CONFIG.browser_sync);
 
-  gulp.watch(path.join(SRC_PATH, '/js/**/*'), scripts);
-  gulp.watch(path.join(SRC_PATH, '/styles/**/*'), styles);
+  gulp.watch('./src/js/**/*', scripts);
+  gulp.watch('./src/styles/**/*', styles);
 });

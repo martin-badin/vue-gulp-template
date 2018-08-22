@@ -1,6 +1,6 @@
 const config = {
   transform: ['vueify', 'babelify'],
-  debug: false,
+  debug: process.env.NODE_ENV !== 'production',
 };
 
 if (process.env.NODE_ENV === 'production') {
