@@ -35,6 +35,8 @@ style:
     path: ./themes/theme_name/assets/css
     name: style.min.css
 browser_sync:
+  open: external
+  host: theme_name.l
   proxy: theme_name.l
   browser: google chrome
   baseDir: ./
