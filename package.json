@@ -1,12 +1,16 @@
 {
   "name": "vue-gulp-template",
   "author": "Martin Badin <martin.badin@gmail.com>",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/martin-badin/vue-gulp-template"
+    "url": "git+https://github.com/martin-badin/vue-gulp-template.git"
   },
+  "bugs": {
+    "url": "https://github.com/martin-badin/vue-gulp-template/issues"
+  },
+  "homepage": "https://github.com/martin-badin/vue-gulp-template/blob/master/README.md",
   "devDependencies": {
     "vue-cli": "^2.8.1"
   }
