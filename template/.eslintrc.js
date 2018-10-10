@@ -6,7 +6,5 @@ module.exports = {
   },
   plugins: ['flowtype', 'vue'],
   extends: ['eslint:recommended', 'plugin:vue/essential'],
-  env: {
-    node: true,
-  },
+  env: { node: true },
 };

@@ -1,5 +1,5 @@
 const config = {
-  transform: ['vueify', 'babelify'],
+  transform: ['vueify-next', 'babelify'],
   debug: process.env.NODE_ENV !== 'production',
 };
 
