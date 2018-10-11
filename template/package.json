@@ -16,6 +16,7 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-flow": "^7.0.0",
     "autoprefixer": "^9.1.5",
+    "babel-eslint": "^10.0.1",
     "babelify": "^10.0.0",
     "browser-sync": "^2.26.0",
     "browserify": "^16.2.3",
@@ -40,7 +41,7 @@
     "uglifyify": "^5.0.1",
     "vinyl-source-stream": "^2.0.0",
     "vue-eslint-parser": "^3.2.2",
-    "vueify-next": "^9.5.0"
+    "vueify-next": "^9.5.3"
   },
   "dependencies": {
     "vue": "^2.5.17"
