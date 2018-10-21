@@ -7,6 +7,7 @@ vue init martin-badin/vue-gulp-template project-name
 ```
 
 ## Introduction
+![Vue Gulp Template](template.jpg)
 * simple php server
 * the template using for watching files the [Browsersync](https://browsersync.io/)
 * the template is set for [vuejs](https://vuejs.org) but it can be used for some other js frameworks
