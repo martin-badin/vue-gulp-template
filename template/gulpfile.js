@@ -10,8 +10,13 @@ const BrowserifyConfig = require('./browserify.config');
 const YAML = require('js-yaml');
 const fs = require('fs');
 const postcss = require('gulp-postcss');
+const PHPServer = require('php-server-manager');
 
 const GULP_CONFIG = YAML.load(fs.readFileSync('./gulp.config.yaml', 'utf8'));
+
+const server = new PHPServer({
+  directory: 'public',
+});
 
 function styles() {
   return gulp
@@ -40,6 +45,8 @@ function scripts() {
 gulp.task('build', gulp.parallel(scripts, styles));
 
 gulp.task('watch', () => {
+  server.run();
+
   browserSync.init(GULP_CONFIG.browser_sync);
 
   gulp.watch('./src/js/**/*', scripts);

@@ -2,19 +2,17 @@ javascript:
   sources:
     - ./src/js/app.js
   output:
-    path: ./themes/theme_name/assets/js
+    path: ./public/assets/js
     name: main.min.js
 style:
   sources:
     - ./src/styles/style.scss
   output:
-    path: ./themes/theme_name/assets/css
+    path: ./public/assets/css
     name: style.min.css
 browser_sync:
-  open: external
-  host: theme_name.l
-  proxy: theme_name.l
+  proxy: localhost:8000
   browser: google chrome
   baseDir: ./
   files:
-    - ./themes/theme_name/**/*
+    - ./public/**/*

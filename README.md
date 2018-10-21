@@ -7,7 +7,7 @@ vue init martin-badin/vue-gulp-template project-name
 ```
 
 ## Introduction
-
+* simple php server
 * the template using for watching files the [Browsersync](https://browsersync.io/)
 * the template is set for [vuejs](https://vuejs.org) but it can be used for some other js frameworks
 * the template is set for [sass](https://sass-lang.com/)
@@ -26,22 +26,20 @@ javascript:
   sources:
     - ./src/js/app.js
   output:
-    path: ./themes/theme_name/assets/js
+    path: ./public/assets/js
     name: main.min.js
 style:
   sources:
     - ./src/styles/style.scss
   output:
-    path: ./themes/theme_name/assets/css
+    path: ./public/assets/css
     name: style.min.css
 browser_sync:
-  open: external
-  host: theme_name.l
-  proxy: theme_name.l
+  proxy: localhost:8000
   browser: google chrome
   baseDir: ./
   files:
-    - ./themes/theme_name/**/*
+    - ./public/**/*
 ```
 
 ## Using [postcss-env-replace](https://github.com/stehefan/postcss-env-replace)
