@@ -1,5 +1,5 @@
 [ignore]
-<PROJECT_ROOT>/vendor/.*
+<PROJECT_ROOT>/public/.*
 
 [include]
 
@@ -8,7 +8,6 @@
 [lints]
 
 [options]
-module.name_mapper.extension='vue' -> '<PROJECT_ROOT>/flow/EmptyModule.js.flow'
 module.file_ext=.vue
 module.file_ext=.js
 
