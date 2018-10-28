@@ -1,5 +1,4 @@
 node_modules
-assets
-.env
-themes/demo
+public/assets/css
+public/assets/js
 yarn-error.log

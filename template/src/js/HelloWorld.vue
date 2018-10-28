@@ -1,10 +1,7 @@
 <template>
   <div class="hello">
     <div class="logos">
-      <img src="/assets/images/vue.png">
-      <img src="/assets/images/gulp.png">
-      <img src="/assets/images/browsersync.png">
-      <img src="/assets/images/php.png">
+      <img src="/assets/images/logo.jpg">
     </div>
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
