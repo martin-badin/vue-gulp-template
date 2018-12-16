@@ -1,5 +1,5 @@
 {
-  "name": "{{ name }}",
+  "name": "fd",
   "author": "{{ author }}",
   "version": "1.0.0",
   "private": true,
@@ -12,10 +12,10 @@
     "lint-fix": "yarn lint --fix"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.0",
     "@babel/preset-flow": "^7.0.0",
-    "autoprefixer": "^9.3.1",
+    "autoprefixer": "^9.4.2",
     "babel-eslint": "^10.0.1",
     "babelify": "^10.0.0",
     "browser-sync": "^2.26.3",
@@ -23,10 +23,10 @@
     "cross-env": "^5.2.0",
     "cssnano": "^4.1.7",
     "envify": "^4.1.0",
-    "eslint": "^5.8.0",
-    "eslint-plugin-flowtype": "^3.1.1",
-    "eslint-plugin-vue": "^5.0.0-beta.3",
-    "flow-bin": "^0.84.0",
+    "eslint": "^5.10.0",
+    "eslint-plugin-flowtype": "^3.2.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "flow-bin": "^0.89.0",
     "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-noop": "^1.0.0",
@@ -41,12 +41,12 @@
     "postcss-import": "^12.0.1",
     "uglifyify": "^5.0.1",
     "vinyl-source-stream": "^2.0.0",
-    "vue-eslint-parser": "^3.2.2",
+    "vue-eslint-parser": "^4.0.3",
     "vueify-next": "^9.5.3"
   },
   "dependencies": {
     "reset-css": "^4.0.1",
-    "vue": "^2.5.17"
+    "vue": "^2.5.21"
   },
   "browserslist": [
     "last 3 versions",
