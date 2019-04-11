@@ -6,7 +6,6 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development gulp watch",
     "build": "cross-env NODE_ENV=production gulp build",
-    "flow:watch": "flow-watch",
     "format": "prettier --single-quote --trailing-comma es5 --write '{src,__{tests,mocks}__}/**/*'",
     "lint": "eslint 'src/**/*.{js,vue}'",
     "lint-fix": "yarn lint --fix"
@@ -14,19 +13,16 @@
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
-    "@babel/preset-flow": "^7.0.0",
     "autoprefixer": "^9.5.1",
     "babel-eslint": "^10.0.1",
     "babelify": "^10.0.0",
     "browser-sync": "^2.26.3",
     "browserify": "^16.2.3",
-    "cross-env": "^5.2.0",
+    "cross-env": "^6.0.3",
     "cssnano": "^4.1.10",
     "envify": "^4.1.0",
     "eslint": "^5.16.0",
-    "eslint-plugin-flowtype": "^3.6.1",
     "eslint-plugin-vue": "^5.2.2",
-    "flow-bin": "^0.96.0",
     "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-noop": "^1.0.0",
@@ -44,7 +40,7 @@
     "vueify-next": "^9.5.3"
   },
   "dependencies": {
-    "reset-css": "^4.0.1",
+    "reset-css": "^5.0.1",
     "vue": "^2.6.10"
   },
   "browserslist": [
