@@ -1,6 +1,6 @@
 javascript:
   sources:
-    - ./src/js/app.js
+    - ./src/js/app.ts
   output:
     path: ./public/assets/js
     name: main.min.js
