@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <div class="logos">
-      <img src="/assets/images/logo.jpg">
+      <img src="/assets/images/logo.jpg" />
     </div>
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
@@ -18,7 +18,7 @@
       <li>
         <a href="https://twitter.com/vuejs" target="_blank">Twitter</a>
       </li>
-      <br>
+      <br />
       <li>
         <a
           href="https://github.com/martin-badin/vue-gulp-template"
@@ -44,10 +44,14 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+interface Data {
+  msg: string;
+}
+
 export default {
   name: 'HelloWorld',
-  data() {
+  data(): Data {
     return {
       msg: 'Welcome to Your Vue.js App',
     };
