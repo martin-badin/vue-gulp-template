@@ -3,10 +3,5 @@
   "eslint.autoFixOnSave": true,
   "eslint.validate": ["javascript", "javascriptreact", "vue"],
   "files.associations": { "*.htm": "twig" },
-  "flow.enabled": true,
-  "flow.runOnEdit": true,
-  "flow.showStatus": true,
-  "flow.stopFlowOnExit": true,
-  "flow.useNPMPackagedFlow": true,
   "javascript.validate.enable": false
 }
