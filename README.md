@@ -11,7 +11,7 @@ vue init martin-badin/vue-gulp-template project-name
 * the template using for watching files the [Browsersync](https://browsersync.io/)
 * the template is set for [vuejs](https://vuejs.org) but it can be used for some other js frameworks
 * the template is set for [sass](https://sass-lang.com/)
-* add support for [flow](https://flow.org/en/)
+* add support for [typescript](https://www.typescriptlang.org/)
 * include packages from node_modules in sass files
 
 ## Setup
@@ -24,7 +24,7 @@ vue init martin-badin/vue-gulp-template project-name
 ```yaml
 javascript:
   sources:
-    - ./src/js/app.js
+    - ./src/js/app.ts
   output:
     path: ./public/assets/js
     name: main.min.js
