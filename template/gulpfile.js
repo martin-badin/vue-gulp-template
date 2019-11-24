@@ -30,6 +30,6 @@ gulp.task('lint', gulp.series('javascript:lint', 'sass:lint'));
 gulp.task('watch', () => {
   browserSync.init(CONFIG.gulp.browser_sync);
 
-  gulp.watch('./src/js/**/*', 'javascript:build');
-  gulp.watch('./src/styles/**/*', 'sass:build');
+  gulp.watch('./src/js/**/*', gulp.series('javascript:build'));
+  gulp.watch('./src/styles/**/*', gulp.series('sass:build'));
 });
