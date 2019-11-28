@@ -8,9 +8,10 @@ module.exports = () => {
   return browserify(CONFIG.gulp.javascript.sources, {
     debug: process.env.NODE_ENV !== 'production',
   })
+    .plugin('tslintify', { format: 'stylish' })
     .plugin('tsify')
     .transform('vueify-next')
-    .transform('babelify', { extensions: ['.ts', '.tsx'] })
+    .transform('babelify', { extensions: ['.ts', '.tsx', '.js'] })
     .transform('envify', { global: true })
     .transform('uglifyify', {
       mangle: true,
