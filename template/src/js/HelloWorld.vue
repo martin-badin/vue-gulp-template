@@ -45,16 +45,18 @@
 </template>
 
 <script lang="ts">
+import Vue from "vue";
+
 interface Data {
   msg: string;
 }
 
-export default {
+export default Vue.extend({
   name: 'HelloWorld',
   data(): Data {
     return {
       msg: 'Welcome to Your Vue.js App',
     };
   },
-};
+});
 </script>

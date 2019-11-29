@@ -1,13 +1,15 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "esnext",
-    "strict": true,
+    "module": "commonjs",
+    "allowJs": true,
+    "strict": false,
     "jsx": "preserve",
     "importHelpers": true,
     "moduleResolution": "node",
+    "experimentalDecorators": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "allowSyntheticDefaultImports": false,
     "sourceMap": true,
     "baseUrl": ".",
     "types": ["jest"],
@@ -23,6 +25,6 @@
     "src/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx"
-  ]
-  // "exclude": ["node_modules"]
+  ],
+  "exclude": ["node_modules"]
 }
