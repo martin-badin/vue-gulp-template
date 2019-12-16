@@ -5,6 +5,7 @@
     "exclude": ["node_modules/**"]
   },
   "rules": {
-    "no-unused-expression": false
+    "no-unused-expression": false,
+    "strict-type-predicates": true
   }
 }

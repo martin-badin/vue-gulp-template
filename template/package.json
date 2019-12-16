@@ -4,17 +4,19 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "cross-env NODE_ENV=development gulp watch",
     "build": "cross-env NODE_ENV=production gulp build",
     "clean": "gulp clean",
-    "format": "prettier --single-quote --trailing-comma es5 --write '{src,__{tests,mocks}__}/**/*'",
-    "lint": "./node_modules/.bin/vue-tslint -g && gulp sass:lint"
+    "format": "prettier --write '**/*.{js,ts,vue,yaml,json,md}'",
+    "lint": "clear && vue-tslint && gulp sass:lint",
+    "start": "cross-env NODE_ENV=development gulp watch",
+    "test": "jest"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.4",
-    "@babel/preset-env": "^7.7.4",
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
     "@babel/preset-typescript": "^7.7.4",
-    "autoprefixer": "^9.7.2",
+    "@types/vfile-message": "^2.0.0",
+    "autoprefixer": "^9.7.3",
     "babelify": "^10.0.0",
     "browser-sync": "^2.26.3",
     "browserify": "^16.2.3",
@@ -28,31 +30,32 @@
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-stylelint": "^10.0.0",
+    "gulp-stylelint": "^11.0.0",
     "jest": "^24.9.0",
     "js-yaml": "^3.13.1",
     "postcss-color-hex-alpha": "^5.0.3",
     "postcss-image-set-polyfill": "^1.0.0",
     "postcss-import": "^12.0.1",
     "prettier": "^1.19.1",
-    "stylelint": "^11.1.1",
+    "stylelint": "^12.0.0",
     "stylelint-config-standard-scss": "^1.1.0",
     "stylelint-scss": "^3.13.0",
+    "ts-jest": "^24.2.0",
     "tsify": "^4.0.1",
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
     "tslint-config-standard": "^9.0.0",
     "tslintify": "^2.0.2",
-    "typescript": "^3.7.2",
+    "typescript": "^3.7.3",
     "uglifyify": "^5.0.1",
     "vinyl-source-stream": "^2.0.0",
-    "vue-template-compiler": "^2.6.10",
+    "vue-jest": "^3.0.5",
     "vue-tslint": "^0.3.2",
     "vueify-next": "^9.5.3"
   },
   "dependencies": {
     "reset-css": "^5.0.1",
-    "vue": "^2.6.10"
+    "vue": "^2.6.11"
   },
   "browserslist": [
     "last 3 versions",
@@ -62,11 +65,35 @@
     "vue": "vue/dist/vue.common.js"
   },
   "stylelint": {
-    "extends": "stylelint-config-standard-scss"
+    "extends": [
+      "stylelint-config-standard-scss"
+    ],
+    "rules": {
+      "selector-pseudo-element-colon-notation": "single",
+      "no-descending-specificity": null,
+      "value-list-comma-newline-after": null,
+      "declaration-colon-newline-after": null
+    }
   },
   "prettier": {
     "singleQuote": true,
     "trailingComma": "es5",
-    "tabWidth": 2
+    "tabWidth": 2,
+    "printWidth": 120
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "vue"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "transform": {
+      "^.+\\.(js)$": "babel-jest",
+      "^.+\\.(ts)$": "ts-jest",
+      ".*\\.(vue)$": "vue-jest"
+    }
   }
 }

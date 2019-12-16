@@ -20,10 +20,7 @@
       </li>
       <br />
       <li>
-        <a
-          href="https://github.com/martin-badin/vue-gulp-template"
-          target="_blank"
-        >Docs for This Template</a>
+        <a href="https://github.com/martin-badin/vue-gulp-template" target="_blank">Docs for This Template</a>
       </li>
     </ul>
     <h2>Ecosystem</h2>
@@ -44,19 +41,4 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from "vue";
-
-interface Data {
-  msg: string;
-}
-
-export default Vue.extend({
-  name: 'HelloWorld',
-  data(): Data {
-    return {
-      msg: 'Welcome to Your Vue.js App',
-    };
-  },
-});
-</script>
+<script lang="ts" src="./HelloWorld.ts"></script>

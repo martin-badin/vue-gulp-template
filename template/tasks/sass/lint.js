@@ -6,7 +6,7 @@ module.exports = () => {
     .src('./src/styles/**/*.scss')
     .pipe(
       gulpStylelint({
-        fix: true,
+        fix: false,
         reporters: [{ formatter: 'string', console: true }],
       })
     )

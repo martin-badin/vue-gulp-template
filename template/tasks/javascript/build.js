@@ -14,14 +14,11 @@ module.exports = () => {
     .transform('babelify', { extensions: ['.ts', '.tsx', '.js'] })
     .transform('envify', { global: true })
     .transform('uglifyify', {
+      ecma: 5,
       mangle: true,
       global: true,
-      sourceMap: process.env.NODE_ENV !== 'production',
-      compress: {
-        sequences: true,
-        dead_code: true,
-        booleans: true,
-      },
+      module: true,
+      sourceMap: process.env.NODE_ENV === CONFIG.DEVELOPMENT,
     })
     .bundle()
     .pipe(source(CONFIG.gulp.javascript.output.name))
