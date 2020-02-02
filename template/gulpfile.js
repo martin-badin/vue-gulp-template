@@ -17,9 +17,14 @@ gulp.task('javascript:clean', gulp.series(require('./tasks/javascript/clean')));
 gulp.task('javascript:build', gulp.series(require('./tasks/javascript/build')));
 
 /**
+ * Other tasks
+ */
+gulp.task('all:size', gulp.series(require('./tasks/other/size')));
+
+/**
  * Common tasks
  */
-gulp.task('build', gulp.series('javascript:build', 'sass:build'));
+gulp.task('build', gulp.series('javascript:build', 'sass:build', 'all:size'));
 gulp.task('clean', gulp.series('javascript:clean', 'sass:clean'));
 gulp.task('lint', gulp.series('sass:lint'));
 

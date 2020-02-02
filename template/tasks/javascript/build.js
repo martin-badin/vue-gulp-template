@@ -24,3 +24,5 @@ module.exports = () => {
     .pipe(source(CONFIG.gulp.javascript.output.name))
     .pipe(gulp.dest(CONFIG.gulp.javascript.output.path));
 };
+
+module.exports.displayName = 'build';

@@ -18,8 +18,8 @@ module.exports = () => {
     )
     .pipe(postcss())
     .pipe(concat(CONFIG.gulp.style.output.name))
-    .pipe(
-      process.env.NODE_ENV === 'development' ? sourcemaps.write('.') : noop()
-    )
+    .pipe(process.env.NODE_ENV === 'development' ? sourcemaps.write('.') : noop())
     .pipe(gulp.dest(CONFIG.gulp.style.output.path));
 };
+
+module.exports.displayName = 'build';

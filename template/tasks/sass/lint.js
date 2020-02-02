@@ -12,3 +12,5 @@ module.exports = () => {
     )
     .pipe(gulp.dest('./src/styles/'));
 };
+
+module.exports.displayName = 'lint';
