@@ -6,20 +6,20 @@ const CONFIG = require('./tasks/config');
 /**
  * Sass tasks
  */
-gulp.task('sass:clean', gulp.series(require('./tasks/sass/clean')));
-gulp.task('sass:lint', gulp.series(require('./tasks/sass/lint')));
-gulp.task('sass:build', gulp.series(require('./tasks/sass/build')));
+gulp.task('sass:clean', require('./tasks/sass/clean'));
+gulp.task('sass:lint', require('./tasks/sass/lint'));
+gulp.task('sass:build', require('./tasks/sass/build'));
 
 /**
  * Javascript tasks
  */
-gulp.task('javascript:clean', gulp.series(require('./tasks/javascript/clean')));
-gulp.task('javascript:build', gulp.series(require('./tasks/javascript/build')));
+gulp.task('javascript:clean', require('./tasks/javascript/clean'));
+gulp.task('javascript:build', require('./tasks/javascript/build'));
 
 /**
  * Other tasks
  */
-gulp.task('all:size', gulp.series(require('./tasks/other/size')));
+gulp.task('all:size', require('./tasks/other/size'));
 
 /**
  * Common tasks

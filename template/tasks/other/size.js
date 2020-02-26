@@ -9,5 +9,3 @@ module.exports = () => {
     .pipe(size({ showFiles: true, enableGzip: true }))
     .pipe(gulp.dest('dist'));
 };
-
-module.exports.displayName = 'size';
