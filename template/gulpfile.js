@@ -14,6 +14,7 @@ gulp.task('sass:build', require('./tasks/sass/build'));
  * Javascript tasks
  */
 gulp.task('javascript:clean', require('./tasks/javascript/clean'));
+gulp.task('javascript:lint', require('./tasks/javascript/lint'));
 gulp.task('javascript:build', require('./tasks/javascript/build'));
 
 /**
@@ -26,7 +27,7 @@ gulp.task('all:size', require('./tasks/other/size'));
  */
 gulp.task('build', gulp.series('javascript:build', 'sass:build', 'all:size'));
 gulp.task('clean', gulp.series('javascript:clean', 'sass:clean'));
-gulp.task('lint', gulp.series('sass:lint'));
+gulp.task('lint', gulp.series('javascript:lint', 'sass:lint'));
 
 /**
  * Watch task
