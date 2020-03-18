@@ -31,7 +31,6 @@
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-prettier": "^3.1.2",
     "gulp": "^4.0.0",
-    "gulp-check-filesize": "^2.0.1",
     "gulp-concat": "^2.6.1",
     "gulp-eslint": "^6.0.0",
     "gulp-noop": "^1.0.0",

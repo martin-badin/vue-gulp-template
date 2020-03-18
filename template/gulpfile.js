@@ -18,14 +18,9 @@ gulp.task('javascript:lint', require('./tasks/javascript/lint'));
 gulp.task('javascript:build', require('./tasks/javascript/build'));
 
 /**
- * Other tasks
- */
-gulp.task('all:size', require('./tasks/other/size'));
-
-/**
  * Common tasks
  */
-gulp.task('build', gulp.series('javascript:build', 'sass:build', 'all:size'));
+gulp.task('build', gulp.series('javascript:build', 'sass:build'));
 gulp.task('clean', gulp.series('javascript:clean', 'sass:clean'));
 gulp.task('lint', gulp.series('javascript:lint', 'sass:lint'));
 
