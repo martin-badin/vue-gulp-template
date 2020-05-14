@@ -1,7 +1,6 @@
 const config = {
   plugins: [
     require('postcss-import'),
-    require('postcss-color-hex-alpha'),
     require('postcss-image-set-polyfill'),
     require('autoprefixer'),
   ],

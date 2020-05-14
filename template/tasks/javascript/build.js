@@ -5,6 +5,8 @@ const source = require('vinyl-source-stream');
 const CONFIG = require('../config');
 
 module.exports = () => {
+  console.log('Environment', process.env.NODE_ENV);
+
   return browserify(CONFIG.gulp.javascript.sources, {
     debug: process.env.NODE_ENV !== 'production',
   })

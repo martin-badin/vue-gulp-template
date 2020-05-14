@@ -8,6 +8,8 @@ const noop = require('gulp-noop');
 const CONFIG = require('../config');
 
 module.exports = () => {
+  console.log('Environment', process.env.NODE_ENV);
+
   return gulp
     .src(CONFIG.gulp.style.sources)
     .pipe(process.env.NODE_ENV === 'development' ? sourcemaps.init() : noop())
