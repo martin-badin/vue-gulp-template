@@ -42,7 +42,7 @@
     "postcss-image-set-polyfill": "^1.0.0",
     "postcss-import": "^12.0.1",
     "prettier": "^2.0.5",
-    "stylelint": "^13.3.3",
+    "stylelint": "^15.10.1",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-scss": "^3.17.2",
     "ts-jest": "^25.5.1",
